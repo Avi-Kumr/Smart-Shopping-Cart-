@@ -24,4 +24,15 @@ This project is a **Smart Shopping Cart** with an **RFID-based self-checkout sys
 - **RFID Module (MFRC522)**  
 - **Barcode Scanner**  
 
----
+## 🔧 Installation & Setup  
+
+### 1️⃣ **Upload ESP32 Code**  
+1. Open `esp32_code.ino` in **Arduino IDE**  
+2. Install required libraries:  
+   ```cpp
+   WiFi.h
+   HTTPClient.h
+   ArduinoJson.h
+3.Update WiFi credentials and server URL
+  WiFiManager wifiManager("Your_SSID", "Your_PASSWORD");
+  HTTPHandler httpHandler("http://192.168.X.X:8080/items");
